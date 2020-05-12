@@ -1,0 +1,77 @@
+section {
+	border-top: 5px solid $accent;
+	background: #E4E4E4;
+	height: calc(100vh - 250px);
+	overflow: auto;
+	padding: 15px 45px;
+}
+.input-div,
+.legend {
+	height: 50px;
+}
+.input-div{
+	margin: auto;
+		& p {
+			font-size: 10px;
+			margin: 10px 5px;
+			color: gray;
+		}
+}
+
+.search-and-legend {
+	@include flex($row, wrap, $center, $center);
+	margin: 20px auto;
+		& input {
+			@include size(40px, 450px);
+			border-radius: 5px;
+			padding: 5px 10px;
+			border: 1px solid rgb(221, 221, 221);
+			box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+				&::placeholder {
+					color: rgba(145, 145, 145, 0.747);
+					// font-style: italic;
+					font-size: 16px;
+				}
+		}
+}
+
+.legend {
+	width: 50%;
+	@include flex($row, nowrap, $center, $center);
+}
+.legend-group {
+	@include flex($row, nowrap, $center, $center);
+	margin: 0 20px;
+		& p {
+			font-size: 15px;
+			color: $project-text;
+			margin-left: 10px;
+		}
+}
+.dot,
+.html-tech,
+.css-tech,
+.js-tech {
+	@include size(17px, 17px);
+	border-radius: 50%;
+}
+.html .dot,
+.html-tech {
+	background: $html;
+}
+.css .dot,
+.css-tech {
+	background: $css;
+}
+.js .dot,
+.js-tech {
+	background: $js;
+}
+.tech-used div {
+	margin: 10px auto;
+}
+.time {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}

@@ -1,0 +1,87 @@
+.code-project-container {
+	@include flex($row, wrap, $sb, $center);
+}
+.project-card {
+	position: relative;
+	padding: 10px;
+	padding-left: 5px;
+	width: 300px;
+	min-width: 300px;
+	height: auto;
+	margin: 20px auto;
+	box-shadow: $bs;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid rgb(199, 199, 199);
+	color: rgb(109, 109, 109);
+	padding-bottom: 10px;
+	transition: .3s;
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	grid-template-rows: 1fr 80px;
+	grid-template-areas: 
+	'tech info'
+	'buttons buttons';
+		& h4 {
+			margin: 15px 0 5px;
+			color: black;
+		}
+		& h3 {
+			margin: 15px 0;
+			color: black;
+		}
+		&:hover {
+			transform: scale(1.03);
+		}
+}
+.tech-used {
+	grid-area: 'tech';
+	margin-top: 5px;
+}
+.card-info {
+	grid-area: 'info';
+}
+.card-buttons {
+	grid-area: 'buttons';
+	@include flex($col, nowrap, $center, $center);
+	width: 300px;
+	padding: 5px 10px;
+		& a {
+			text-decoration: none;
+			text-align: center;
+			width: 90%;
+			padding: 8px 10px;
+			border-radius: 5px;
+			color: $accent;
+			background: $button;
+			font-size: 15px;
+			transition: .4s;
+			margin: 5px auto;
+			cursor: pointer;
+				&:hover {
+					background: lighten($button, 10%);
+				}
+				&:visited {
+					color: $accent;
+				}
+		}
+}
+.desc {
+	margin-bottom: 10px;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+@media (min-width: 550px) {
+	.project-card {
+		@include size(300px, 450px);
+		grid-template-rows: 1fr 50px;
+	}
+	.card-buttons {
+		width: 430px;
+		flex-direction: row;
+			& a {
+				margin: auto 10px;
+			}
+	}
+}

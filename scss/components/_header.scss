@@ -1,0 +1,29 @@
+header {
+	background: linear-gradient(rgba(27, 38, 58, 0.664), rgba(32, 46, 68, 0.836)), url(../img/bg.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	@include flex($row, npwrap, $center, $center);
+	text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35);
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: relative;
+		& ::selection {
+			background: transparent;
+		}
+}
+.logo {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 60px;
+	filter: grayscale(1) brightness(5);
+	opacity: 0.4;
+
+}
+@media (min-width: 768px) {
+	header {
+		font-size: 25px;
+	}
+}
