@@ -1,6 +1,6 @@
 header {
 	background: linear-gradient(rgba(27, 38, 58, 0.664), rgba(32, 46, 68, 0.836)), url(../img/bg.jpg);
-	height: 250px;
+	height: 200px;
 	background-size: cover;
 	background-position: center;
 	@include flex($row, npwrap, $center, $center);

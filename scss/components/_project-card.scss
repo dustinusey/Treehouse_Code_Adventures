@@ -1,5 +1,5 @@
 .code-project-container {
-	@include flex($row, wrap, $sb, $center);
+	@include flex($row, wrap, $fs, $center);
 }
 .project-card {
 	position: relative;

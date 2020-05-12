@@ -3412,7 +3412,7 @@ body {
 
 header {
   background: linear-gradient(rgba(27, 38, 58, 0.664), rgba(32, 46, 68, 0.836)), url(../img/bg.jpg);
-  height: 250px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -3447,7 +3447,7 @@ header ::selection {
 section {
   border-top: 5px solid #93B4C1;
   background: #E4E4E4;
-  height: calc(100vh - 250px);
+  height: calc(100vh - 200px);
   overflow: auto;
   padding: 15px 45px;
 }
@@ -3548,7 +3548,7 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 

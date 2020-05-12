@@ -13,14 +13,27 @@ const proj = [
 		javascript: true
 	},
 	{
-		name: 'From Mockup to Code',
+		name: 'From Mockup to Code (firebase.js)',
 		creator: 'Dustin Usey',
-		date: 'Wednesday May 13, 2020',
-		description: "You're working for a company as a front-end dev and your boss tells you that a project your team has been working on is near completion! They need you to create the landing age from a mockup the design team has created using HTML & CSS.",
-		tags: 'beginner dustin from mockup to code html css plugin frontend landing',
-		readme: 'https://github.com/dustinusey/firebasejs',
+		date: 'Wednesday May 12, 2020',
+		description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a plugin they've been developing; fireboxjs. The design team has created a mockup for the landing page for this plugin and your boss needs you to code it out with just HTML and CSS!",
+		tags: 'beginner dustin from mockup to code html css plugin frontend landing firebasejs',
+		readme: 'https://github.com/dustinusey/firebasejs/blob/master/README.md',
 		download: 'https://github.com/dustinusey/firebasejs/archive/master.zip',
 		timeToComplete: '2 hours',
+		html: true,
+		css: true,
+		javascript: false
+	},
+	{
+		name: 'From Mockup to Code (Momentum)',
+		creator: 'Dustin Usey',
+		date: 'Wednesday May 12, 2020',
+		description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a website they've been developing; Momentum. The design team has created a mockup for the beta testing landing page for this website and your boss needs you to code it out with just HTML and CSS!",
+		tags: 'beginner dustin from mockup to code html css plugin frontend landing momentum',
+		readme: 'https://github.com/dustinusey/Momentum/blob/master/README.md',
+		download: 'https://github.com/dustinusey/momentum/archive/master.zip',
+		timeToComplete: '1 hour',
 		html: true,
 		css: true,
 		javascript: false
