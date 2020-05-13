@@ -2,7 +2,7 @@ section {
 	border-top: 5px solid $accent;
 	background: #E4E4E4;
 	height: calc(100vh - 200px);
-	overflow: auto;
+	overflow-y: scroll;
 	padding: 15px 45px;
 }
 .input-div,

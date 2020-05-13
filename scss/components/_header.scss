@@ -3,7 +3,7 @@ header {
 	height: 200px;
 	background-size: cover;
 	background-position: center;
-	@include flex($row, npwrap, $center, $center);
+	@include flex($col, npwrap, $center, $center);
 	text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35);
 	color: white;
 	font-size: 15px;

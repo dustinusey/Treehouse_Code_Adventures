@@ -3417,7 +3417,7 @@ header {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: npwrap;
   justify-content: center;
   align-items: center;
@@ -3449,7 +3449,7 @@ section {
   border-top: 5px solid #93B4C1;
   background: #E4E4E4;
   height: calc(100vh - 200px);
-  overflow: auto;
+  overflow-y: scroll;
   padding: 15px 45px;
 }
 
@@ -3570,7 +3570,7 @@ section {
   padding-bottom: 10px;
   transition: 0.3s;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 50px 1fr;
   grid-template-rows: 1fr 80px;
   grid-template-areas: "tech info" "buttons buttons";
 }
@@ -3628,12 +3628,12 @@ section {
 .desc {
   margin-bottom: 10px;
   font-size: 14px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 @media (min-width: 550px) {
   .project-card {
-    height: 300px;
+    height: 325px;
     width: 450px;
     grid-template-rows: 1fr 50px;
   }
