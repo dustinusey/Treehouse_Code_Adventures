@@ -13,7 +13,7 @@ const proj = [
 		javascript: true
 	},
 	{
-		name: 'From Mockup to Code (firebase.js)',
+		name: 'firebasejs (code the mockup!)',
 		creator: 'Dustin Usey',
 		date: 'Tuesday May 12, 2020',
 		description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a plugin they've been developing; fireboxjs. The design team has created a mockup for the landing page for this plugin and your boss needs you to code it out with just HTML and CSS!",
@@ -26,7 +26,7 @@ const proj = [
 		javascript: false
 	},
 	{
-		name: 'From Mockup to Code (Momentum)',
+		name: 'Momentum (code the mockup!)',
 		creator: 'Dustin Usey',
 		date: 'Tuesday May 12, 2020',
 		description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a website they've been developing; Momentum. The design team has created a mockup for the beta testing landing page for this website and your boss needs you to code it out with just HTML and CSS!",
