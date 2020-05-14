@@ -15,7 +15,7 @@ const proj = [
 	{
 		name: 'From Mockup to Code (firebase.js)',
 		creator: 'Dustin Usey',
-		date: 'Wednesday May 12, 2020',
+		date: 'Tuesday May 12, 2020',
 		description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a plugin they've been developing; fireboxjs. The design team has created a mockup for the landing page for this plugin and your boss needs you to code it out with just HTML and CSS!",
 		tags: 'beginner dustin from mockup to code html css plugin frontend landing firebasejs',
 		readme: 'https://github.com/dustinusey/firebasejs/blob/master/README.md',
@@ -28,12 +28,25 @@ const proj = [
 	{
 		name: 'From Mockup to Code (Momentum)',
 		creator: 'Dustin Usey',
-		date: 'Wednesday May 12, 2020',
+		date: 'Tuesday May 12, 2020',
 		description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a website they've been developing; Momentum. The design team has created a mockup for the beta testing landing page for this website and your boss needs you to code it out with just HTML and CSS!",
 		tags: 'beginner dustin from mockup to code html css plugin frontend landing momentum',
 		readme: 'https://github.com/dustinusey/Momentum/blob/master/README.md',
 		download: 'https://github.com/dustinusey/momentum/archive/master.zip',
 		timeToComplete: '1 hour',
+		html: true,
+		css: true,
+		javascript: false
+	},
+	{
+		name: 'From Mockup to Code (Momentum)',
+		creator: 'Dustin Usey',
+		date: 'Thursday Mat 14, 2020',
+		description: "With this Mockup code challenge, I challenge you to take the iOS Settings as shown in the mockup and recreate it using HTML and CSS! This is a great time to use flexbox or even CSS Grid to structure your settings items.",
+		tags: 'beginner dustin from mockup to code html css frontend ios settings darkmode flex grid',
+		readme: 'https://github.com/dustinusey/iOS_Settings/blob/master/README.md',
+		download: 'https://github.com/dustinusey/iOS_Settings/archive/master.zip',
+		timeToComplete: '2 hours',
 		html: true,
 		css: true,
 		javascript: false
