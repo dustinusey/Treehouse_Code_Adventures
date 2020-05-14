@@ -3477,7 +3477,7 @@ section {
 }
 .search-and-legend input {
   height: 40px;
-  width: 450px;
+  width: 100%;
   border-radius: 5px;
   padding: 5px 10px;
   border: 1px solid #dddddd;
@@ -3489,10 +3489,11 @@ section {
 }
 
 .legend {
+  margin-top: 50px;
   width: 50%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -3503,7 +3504,7 @@ section {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 .legend-group p {
   font-size: 15px;
@@ -3545,6 +3546,24 @@ section {
   right: 10px;
 }
 
+@media (min-width: 550px) {
+  .search-and-input input {
+    width: 450px;
+  }
+
+  .legend {
+    flex-wrap: nowrap;
+  }
+
+  .legend-group {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 965px) {
+  .legend {
+    margin: auto;
+  }
+}
 .code-project-container {
   display: flex;
   flex-direction: row;

@@ -22,7 +22,7 @@ section {
 	@include flex($row, wrap, $center, $center);
 	margin: 20px auto;
 		& input {
-			@include size(40px, 450px);
+			@include size(40px, 100%);
 			border-radius: 5px;
 			padding: 5px 10px;
 			border: 1px solid rgb(221, 221, 221);
@@ -36,12 +36,13 @@ section {
 }
 
 .legend {
+	margin-top: 50px;
 	width: 50%;
-	@include flex($row, nowrap, $center, $center);
+	@include flex($row, wrap, $center, $center);
 }
 .legend-group {
 	@include flex($row, nowrap, $center, $center);
-	margin: 0 20px;
+	margin: 10px 20px;
 		& p {
 			font-size: 15px;
 			color: $project-text;
@@ -74,4 +75,23 @@ section {
 	position: absolute;
 	top: 5px;
 	right: 10px;
+}
+
+@media (min-width: 550px) {
+	.search-and-input input {
+		width: 450px;
+	}
+	.legend {
+		flex-wrap: nowrap;
+	}
+	.legend-group {
+		margin: 0 20px;
+		
+	}
+}
+
+@media (min-width: 965px) {
+	.legend {
+		margin: auto;
+	}
 }
