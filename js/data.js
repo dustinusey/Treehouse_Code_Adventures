@@ -41,7 +41,7 @@ const proj = [
 	{
 		name: 'From Mockup to Code (Momentum)',
 		creator: 'Dustin Usey',
-		date: 'Thursday Mat 14, 2020',
+		date: 'Thursday May 14, 2020',
 		description: "With this Mockup code challenge, I challenge you to take the iOS Settings as shown in the mockup and recreate it using HTML and CSS! This is a great time to use flexbox or even CSS Grid to structure your settings items.",
 		tags: 'beginner dustin from mockup to code html css frontend ios settings darkmode flex grid',
 		readme: 'https://github.com/dustinusey/iOS_Settings/blob/master/README.md',
