@@ -1,5 +1,7 @@
 /* Generate Project Cards from data.js */
 
+proj.reverse();
+
 const projectContainer = document.getElementById('project-container');
 proj.forEach((project, index) => {
 	projectContainer.innerHTML += `
