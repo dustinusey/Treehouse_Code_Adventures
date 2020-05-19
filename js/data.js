@@ -58,7 +58,7 @@ const proj = [
 		description: 'Create a randomized meal planner that you can use to generate a weekly meal plan for the week.',
 		tags: 'HTML, CSS, JavaScript',
 		readme: 'https://github.com/jmereardon17/techdegree-slack-challenges-project-02/blob/master/README.md',
-		download: 'https://github.com/jmereardon17/techdegree-slack-challenges-project-02',
+		download: 'https://github.com/jmereardon17/techdegree-slack-challenges-project-02/archive/master.zip',
 		timeToComplete: '3 Hours',
 		html: true,
 		css: true,
