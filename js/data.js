@@ -50,5 +50,18 @@ const proj = [
 		html: true,
 		css: true,
 		javascript: false
-	}
+	},
+	{
+		name: 'Randomized Meal Planner',
+		creator: 'Jamie Reardon',
+		date: '19/05/2020',
+		description: 'Create a randomized meal planner that you can use to generate a weekly meal plan for the week.',
+		tags: 'HTML, CSS, JavaScript',
+		readme: 'https://github.com/jmereardon17/techdegree-slack-challenges-project-02/blob/master/README.md',
+		download: 'https://github.com/jmereardon17/techdegree-slack-challenges-project-02',
+		timeToComplete: '3 Hours',
+		html: true,
+		css: true,
+		javascript: true
+	},
 ]
