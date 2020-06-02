@@ -54,7 +54,7 @@ const proj = [
 	{
 		name: 'Randomized Meal Planner',
 		creator: 'Jamie Reardon',
-		date: '19/05/2020',
+		date: 'Tuesday May 19, 2020',
 		description: 'Create a randomized meal planner that you can use to generate a weekly meal plan for the week.',
 		tags: 'HTML CSS JavaScript meal mealplan random jamie',
 		readme: 'https://github.com/jmereardon17/techdegree-slack-challenges-project-02/blob/master/README.md',
@@ -64,4 +64,17 @@ const proj = [
 		css: true,
 		javascript: true
 	},
+	{
+		name: 'CloudFlare (code the mockup!)',
+		creator: 'Dustin Usey',
+		date: 'Tuesday June 2, 2020',
+		description: 'CloudFlare is a cloud storage software that will allow users to securely store their files in the cloud. You, as a frontend developer, will will need to recreate the mockup provided to give this web space a login page.',
+		tags: 'dustin usey html css intermediate mockup code frontend login page',
+		readme: 'https://github.com/dustinusey/cloudflare/blob/master/README.md',
+		download: 'https://github.com/dustinusey/cloudflare/archive/master.zip',
+		timeToComplete: '2 hours',
+		html: true,
+		css: true,
+		javascript: false
+	}
 ]
