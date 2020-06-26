@@ -76,5 +76,18 @@ const proj = [
 		html: true,
 		css: true,
 		javascript: false
+	},
+	{
+		name: 'featherLITE (code the mockup!)',
+		creator: 'Dustin Usey',
+		date: 'Friday June 26, 2020',
+		description: 'Feather is a new note taking app that your company will be creating. The design team has given you mockups to code out a LITE version of this application. Are you up for the challenge?',
+		tags: 'dustin usey html css javascript intermediate mockup code frontend login page',
+		readme: 'https://github.com/dustinusey/featherLITE/blob/master/README.md',
+		download: 'https://github.com/dustinusey/featherLITE/archive/master.zip',
+		timeToComplete: '4 hours',
+		html: true,
+		css: true,
+		javascript: true
 	}
 ]
