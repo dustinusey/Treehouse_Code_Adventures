@@ -89,5 +89,18 @@ const proj = [
 		html: true,
 		css: true,
 		javascript: true
+	},
+	{
+		name: 'Social Media Challenge',
+		creator: 'Dustin Usey',
+		date: 'Sunday July 5, 2020',
+		description: "You're comfortable in your coding skills and want to create the next best social media platform! You're given a mockup to follow to create this new platform with only HTML and CSS!",
+		tags: 'dustin usey html css social media advanced mockup code frontend twitter',
+		readme: 'https://github.com/dustinusey/social-challenge/blob/master/README.md',
+		download: 'https://github.com/dustinusey/social-challenge/archive/master.zip',
+		timeToComplete: '4 hours',
+		html: true,
+		css: true,
+		javascript: false
 	}
 ]
