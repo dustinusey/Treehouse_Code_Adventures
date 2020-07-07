@@ -1,0 +1,154 @@
+.nav-container {
+    @include size(70px, 100%);
+    @include flex(row, nowrap, space-between, center);
+    padding: 15px 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.logo-div {
+    width: 50px;
+        & img {
+            width: 100%;
+        }
+}
+.ham-menu {
+    @include size(90%, 50px);
+    @include flex($col, nowrap, space-evenly, center);
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+        & .ham-line {
+            @include size(5px, 80%);
+            border-radius: 5px;
+            background: $main-drk;
+            transition: .4s;
+            pointer-events: none;
+            @include absoluteCenter;
+        }
+}
+.top-line {
+    top: 25%!important;
+}
+.mid-line {
+    top: 50%!important;
+}
+.btm-line {
+    top: 75%!important;
+}
+.hideLine {
+    opacity: 0;
+}
+.centerLine {
+    top: 50%!important;
+}
+.topShift {
+    width: 60%!important;
+    transform: translate(-50%, -50%) rotate(225deg)!important;
+}
+.btmShift {
+    width: 60%!important;
+    transform: translate(-50%, -50%) rotate(-225deg)!important;
+}
+.ham-menu-menu {
+    @include size(0px, 100px);
+    @include flex($col, nowrap flex-end, center);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: $bs;
+    opacity: 0;
+    transition: .3s;
+        & ul {
+            width: 100%;
+            margin-top: auto;
+            & li {
+                margin: 10px auto;
+                @include flex(row, nowrap, center, center);
+                    & i {
+                        @include size(45px, 90%);
+                        @include flex(row, nowrap, center, center);
+                        text-align: center;
+                        border-radius: 5px;
+                        background: whitesmoke;
+                        font-size: 22px;
+                        pointer-events: none;
+                    }
+            }
+        }
+}
+.showHamMenu {
+    opacity: 1;
+    height: 250px;
+}
+
+.name-div {
+    display: none;
+}
+.main-nav {
+    display: none;
+    & li:first-child:hover {
+        background: transparent!important;
+    }
+    & li {
+        display: inline;
+        margin: 0 2px;
+        font-size: 20px;
+        padding: 12px;
+        border-radius: 5px;
+        transition: .2s;
+        cursor: pointer;
+            &:hover {
+                background: whitesmoke;
+            }
+            
+    }
+    & input {
+        border-radius: 5px;
+        border: 1px solid transparent;
+        transition: .4s;
+        padding: 5px 10px;
+        width: 0px;
+        opacity: 0;
+        pointer-events: none;
+            &::placeholder {
+                font-style: italic;
+                color: rgb(206, 206, 206);
+                font-size: 13px;
+            }
+    }
+}
+.show-search {
+    border-color: rgb(223, 222, 222)!important;
+    width: 200px!important;
+    opacity: 1!important;
+    pointer-events: auto!important;
+}
+.extra-info {
+    margin-left: 30px!important;
+}
+
+@media (min-width: 768px) {
+    .ham-menu-menu {
+        display: none;
+    }
+    .logo-div {
+        margin-right: 10px;
+    }
+    .name-div {
+        color: $main-drk;
+        display: initial;
+        font-size: .8em;
+        margin-right: auto;
+    }
+
+
+    .ham-menu {
+        display: none;
+    }
+    .main-nav {
+        display: initial;
+    }
+}

@@ -1,0 +1,80 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include size(100vh, 100%);
+    background: rgba(44, 51, 71, 0.678);
+    z-index: 15;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+}
+
+.show-overlay {
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal {
+    @include size(auto, 95%);
+    @include flex(column, nowrap, space-evenly, center);
+    @include absoluteCenter;
+    max-width: 450px;
+    max-height: 800px;
+    top: -100%;
+    background: white;
+    padding: 15px;
+    position: relative;
+    border-radius: 5px;
+    transition: .3s;
+    box-shadow: $bs;
+        & .fa-times {
+            font-size: 22px;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            transition: .3s;
+                &:hover {
+                    background: whitesmoke;
+                }
+        }
+}
+
+
+.modal_project_container {
+    max-width: 500px;
+    max-height: 700px;
+        & h1 {
+            color: $main-drk;
+            margin-top: 50px;
+            text-align: center;
+        }
+        & img {
+            width: 100%;
+        }
+        & p {
+            color: lighten($main-drk, 10%);
+            font-size: 14px;
+        }
+}
+.modal_project_info {
+    width: 100%;
+}
+.modal-link-div {
+    margin-top: 10px;
+        & a {
+            @include size(35px, 100%);
+            @include flex(row, nowrap, center, center);
+            text-align:center;
+            background: whitesmoke;
+            margin: 5px auto;
+            color: $main-drk;
+            transition: .3s;
+                &:hover {
+                    // color: rgb(255, 255, 255);
+                    background: rgb(207, 217, 224);
+                }
+        }
+}

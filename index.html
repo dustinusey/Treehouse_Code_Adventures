@@ -4,41 +4,94 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/styles.css">
 	<title>Treehouse Code Adventures</title>
 </head>
 <body>
-	<div class="page-container">
+	<!-- wrapper start -->
+	<div class="wrapper">
+		<div class="overlay">
+			<div class="modal">
+				<i class="fas fa-times"></i>
+				<div class="modal_project_container">
+					<h1>Project Name Here</h1>
+					<div class="modal_project_info">
+						<img src="../img/bg/card1.png">
+						<p>You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a website they've been developing; Momentum. The design team has created a mockup for the beta testing landing page for this website and your boss needs you to code it out with just HTML and CSS!</p>
+					</div>
+					<div class="modal-link-div">
+						<a target="_blank" href="#">Instructions</a>
+						<a target="_blank" href="#">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ham-menu-menu">
+			<ul>
+				<li class="mobile-nav-item disabled-feature"><i class="fas fa-search disabled-feature"></i></li>
+				<li class="mobile-nav-item disabled-feature"><i class="fas fa-trophy disabled-feature"></i></li>
+				<li class="mobile-nav-item extra-info-class"><i class="fas fa-info-circle extra-info-class"></i></li>
+			</ul>
+		</div>
+		<!-- nav start -->
+		<nav>
+			<div class="nav-container">
+				<div class="logo-div">
+					<img src="img/thlogo.png" alt="logo for TeamTreehouse">
+				</div>
+				<div class="name-div">
+					<h3>Treehouse Code Adventures</h3>
+					<h3>Front End Web Development</h3>
+				</div>
+				<div class="ham-menu">
+					<div class="ham-line top-line"></div>
+					<div class="ham-line mid-line"></div>
+					<div class="ham-line btm-line"></div>
+				</div>
+				<div class="main-nav">
+					<ul>
+						<li><input type="text" class="project-search" placeholder="Search challenges"></li>
+						<li class="mobile-nav-item disabled-feature"><i class="fas fa-search disabled-feature project-search-btn"></i></li>
+						<li class="mobile-nav-item disabled-feature"><i class="fas fa-trophy disabled-feature"></i></li>
+						<li class="mobile-nav-item extra-info-class"><i class="fas fa-info-circle extra-info-class"></i></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end nav -->
+
+
+		<!-- header start -->
 		<header>
-		<h1>Treehouse Code Adventures</h1>
-		<h4>Frontend Web Development Techdegree</h4>
-		<img class="logo" src="img/th-logo.png" alt="Treehouse Logo">
-	</header>
-		<section>
-			<div class="search-and-legend">
-				<div class="input-div">
-					<input id="project-search" type="text" placeholder="Search projects">
-					<p>(search things like: html, css, javascript, beginner, expert, project name, creator name, ect.)</p>
-				</div>
-				<div class="legend">
-					<div class="legend-group html">
-						<div class="dot"></div><p>HTML</p>
-					</div>
-					<div class="legend-group css">
-						<div class="dot"></div><p>CSS</p>
-					</div>
-					<div class="legend-group js">
-						<div class="dot"></div><p>JavaScript</p>
-					</div>
-				</div>
+			<h1>Treehouse Code Adventures</h1>
+			<h2>Learn. Create. Grow.</h2>
+			
+			<div class="header-img-div">
+				<img src="img/thlogo.png" alt="Logo for Teamtreehouse">
+			</div>
+			<h3>Front End Web Development Techdegree</h3>
+		</header>
+		<!-- end header -->
+
+		<!-- main start -->
+		<main>
+			<div class="card-container">
+
+				
 
 			</div>
-			<div id="project-container" class="code-project-container">
-				<!-- Code injected from datajs/appjs -->
-			</div>
-		</section>
+		</main>
+		<!-- end main -->
+
+		<!-- footer start -->
+		<footer>
+
+		</footer>
+		<!-- end footer -->
+
 	</div>
+	<!-- end wrapper -->
 	<script src="js/data.js"></script>
 	<script src="js/app.js"></script>
 </body>

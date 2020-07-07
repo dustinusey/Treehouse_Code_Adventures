@@ -1,0 +1,23 @@
+@import 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap';
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+i {
+    color: $main-drk;
+    cursor: pointer;
+}
+.np {
+    pointer-events: none;
+}
+.emph {
+    color: rgb(67, 169, 216);
+}
+.firstp {
+    margin-top: 25px;
+}
+.lastp {
+    margin-bottom: 25px;
+}

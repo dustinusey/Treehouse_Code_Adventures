@@ -20,3 +20,13 @@
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
+
+@mixin inline {
+	@content;
+	display: inline;
+}
+
+@mixin block {
+	@content;
+	display: block;
+}

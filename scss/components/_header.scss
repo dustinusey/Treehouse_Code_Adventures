@@ -1,29 +1,48 @@
 header {
-	background: linear-gradient(rgba(27, 38, 58, 0.664), rgba(32, 46, 68, 0.836)), url(../img/bg.jpg);
-	height: 200px;
-	background-size: cover;
-	background-position: center;
-	@include flex($col, npwrap, $center, $center);
-	text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35);
-	color: white;
-	font-size: 15px;
-	text-align: center;
-	position: relative;
-		& ::selection {
-			background: transparent;
-		}
+    @include size(33vh, 100%);
+    @include flex($col, nowrap, center, center);
+    background: linear-gradient(rgba(51, 71, 90, 0.699), rgba(51, 71, 90, 0.699)), url(../img/bg/bgimage.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 15px solid $brdr;
+    font-size: 1em;
+        & h1 {
+            margin-top: auto;
+            color: whitesmoke;
+            font-size: 1em;
+        }
+        & h2 {
+            color: whitesmoke;
+            font-size: .9em;
+        }
+        & h3 {
+            color: whitesmoke;
+            margin: auto auto 10px;
+            font-size: .8em;
+        }
+        & .header-img-div {
+            @include size(90px, 90px);
+                & img {
+                    width: 100%;
+                }
+        }
 }
-.logo {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-	width: 60px;
-	filter: grayscale(1) brightness(5);
-	opacity: 0.4;
 
-}
+
 @media (min-width: 768px) {
-	header {
-		font-size: 25px;
-	}
+    header {
+        height: 33vh;
+    }
+    header {
+        & h1 {
+            font-size: 1.5em;
+        }
+        & h2 {
+            font-size: 1.3em;
+        }
+        & h3 {
+            font-size: 1em;
+        }
+    }
+    
 }

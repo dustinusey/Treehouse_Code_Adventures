@@ -1,0 +1,103 @@
+main {
+    @include size(100%, 100%);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+.card-container {
+    @include flex(row, wrap, center, center);
+}
+.card {
+    @include size(350px, 100%);
+    @include flex(column, nowrap, flex-start, stretch);
+    border: 1px solid rgb(229, 233, 236);
+    border-radius: 10px;
+    margin: 15px auto;
+    transition: .4s;
+    opacity: .9;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+        &:hover {
+           opacitY: 1;
+        }
+        &:hover .card-image-div {
+            transform: scale(1.2);
+        }
+        & .time_length {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 12px;
+            color: lighten($main-drk, 10%);
+        }
+}
+.card-image-div {
+    transition: .5s;
+    @include flex(column, nowrap, center, center);
+    height: 40%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: whitesmoke;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    text-align: center;
+        
+}
+.project_name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-info-div {
+    height: 100%;
+    background: rgba(233, 246, 250, 0.548);
+    @include flex(column, nowrap, center, stretch);
+    margin-top: 20px;
+    padding: 10px;
+        & .project_date, .project_creator {
+            color: lighten($main-drk, 10%);
+            font-size: 13px;
+        }
+        & .project_desc {
+            margin-top: 10px;
+            height: 110px;
+            overflow: hidden;
+            color: $main-drk;
+            font-size: 14px;
+        }
+}
+
+.card-tech-div {
+    padding: 5px 5px 0;
+    margin: auto 0 10px;
+        & li {
+            color: $main-drk;
+            width: auto;
+            padding: 3px 8px;
+            border-radius: 3px;
+            background: rgba(233, 246, 250, 0.548);
+            text-align: center;
+            display: inline-block;
+            font-size: 12px;
+        }
+}
+
+
+
+
+@media (min-width: 600px) {
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+        margin: 15px;
+    }
+}
