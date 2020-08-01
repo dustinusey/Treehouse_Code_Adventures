@@ -103,6 +103,19 @@ const data = [
         project_instructions: 'https://github.com/dustinusey/social-challenge/blob/master/README.md',
         project_download: 'https://github.com/dustinusey/social-challenge/archive/master.zip'
     },
+    {
+        project_name: 'Paws - Pet Adoption Website',
+        project_length:  '2 hours',
+        project_date: 'Saturday August 1, 2020',
+        project_creator: 'Dustin Usey',
+        project_image: './img/bg/card0.png',
+        project_desc: "You're taking your freelancing skills to the streets and noticed a pet adoption agency doesn't have a website. You offer to create one for them and sell it.",
+        project_html: true,
+        project_css: true,
+        project_js: false,
+        project_instructions: 'https://github.com/dustinusey/Paws/blob/master/README.md',
+        project_download: 'https://github.com/dustinusey/Paws/archive/master.zip'
+    },
 ];
 data.reverse();
 
