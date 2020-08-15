@@ -116,6 +116,19 @@ const data = [
         project_instructions: 'https://github.com/dustinusey/Paws/blob/master/README.md',
         project_download: 'https://github.com/dustinusey/Paws/archive/master.zip'
     },
+    {
+        project_name: 'Chatapp Mockup',
+        project_length:  '3 hours',
+        project_date: 'Saturday August 15, 2020',
+        project_creator: 'Dustin Usey',
+        project_image: './img/bg/chat.png',
+        project_desc: "You've been asked to create a chat interface! This will test your CSS skills by structuring multiple elements within a single container.",
+        project_html: true,
+        project_css: true,
+        project_js: false,
+        project_instructions: 'https://github.com/dustinusey/chatapp-mockup/blob/master/README.md',
+        project_download: 'https://github.com/dustinusey/chatapp-mockup/archive/master.zip'
+    },
 ];
 data.reverse();
 
